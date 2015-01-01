@@ -1,0 +1,7 @@
+(add-to-list 'auto-mode-alist '("\\.sjs\\'" . js-mode))
+(add-to-list 'auto-mode-alist '("\\.ls\\'" . coffee-mode))
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+(add-hook 'prog-mode-hook 'linum-mode)
+(spacemacs/set-font "Input" 12)
+(desktop-save-mode t)
+(global-whitespace-mode t)
