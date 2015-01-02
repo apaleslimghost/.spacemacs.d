@@ -1,3 +1,3 @@
 #!/bin/sh
-
-ln -s ~/.spacemacs.d/.spacemacs ~/.spacemacs
+set -x -e
+ln -sf ~/.spacemacs.d/.spacemacs ~/.spacemacs
