@@ -2,7 +2,7 @@
   '(
     ;; package quartertos go here
     editorconfig
-    guess-style
+    dtrt-indent
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -22,7 +22,5 @@ which require an initialization must be listed explicitly in the list.")
 (defun quarterto/init-editorconfig ()
   (use-package editorconfig))
 
-(defun quarterto/init-guess-style ()
-  (use-package guess-style
-    :commands (guess-style-set-variable guess-style-guess-variable guess-style-guess-all))
-    :config (add-hook 'prog-mode-hook 'guess-style-guess-all))
+(defun quarterto/init-dtrt-indent ()
+  (use-package dtrt-indent))

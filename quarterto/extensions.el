@@ -18,7 +18,8 @@
 ;;
 (defun quarterto/init-monokai-dave-theme ()
   (use-package monokai-dave-theme)
-  (setq-default dotspacemacs-default-theme 'monokai-dave))
+  (add-to-list 'dotspacemacs-themes 'monokai-dave)
+  (spacemacs/load-theme 'monokai-dave))
 ;; Often the body of an initialize function uses `use-package'
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
