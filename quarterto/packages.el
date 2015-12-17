@@ -23,4 +23,5 @@ which require an initialization must be listed explicitly in the list.")
   (use-package editorconfig))
 
 (defun quarterto/init-dtrt-indent ()
-  (use-package dtrt-indent))
+  (use-package dtrt-indent)
+  (add-hook 'prog-mode-hook 'dtrt-indent-mode))

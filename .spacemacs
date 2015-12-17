@@ -208,6 +208,7 @@ layers configuration. You are free to put any user code."
     (tab-mark 9 [10511 9]))
    )
   (global-company-mode)
+  (setq tern-command (append tern-command '("--no-port-file")))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -217,6 +218,5 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((((class color) (min-colors 257)) (:foreground "#F8F8F2" :background "#272822")) (((class color) (min-colors 89)) (:foreground "#F5F5F5" :background "#1B1E1C"))))
  '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
  '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
