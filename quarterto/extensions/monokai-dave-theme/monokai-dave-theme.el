@@ -28,7 +28,7 @@
  '(cursor  ((t (:background "#F8F8F0"))))
 
  ;; Temporary defaults
- '(linum                               ((t (:foreground "#7c7d7a"  :background "#0f1110" :underline nil :weight light :inherit nil))))
+ '(linum                               ((t (:foreground "#7c7d7a"  :background "#0f1110" :underline nil :weight light :italic nil :inherit nil))))
  '(fringe                              ((t (                       :background "#0f1110" ))))
  '(hl-line ((t (:foreground nil :background "#202422"))))
  '(variable-pitch                      ((t (:family "Proxima Nova"))))
@@ -94,7 +94,8 @@
  '(diff-removed ((t (:foreground "#F92672"  ))))
  '(diff-added ((t (:foreground "#A6E22E"  ))))
  '(diff-changed ((t (:foreground "#E6DB74"  ))))
- '(font-lock-comment-face ((t (:foreground "#5D6D71" :italic t ))))
+ '(font-lock-comment-face ((t (:foreground "#716D5D" :italic t ))))
+ '(font-lock-doc-face ((t (:foreground "#716D5D" :inherit (font-lock-comment-face)))))
  '(font-lock-string-face ((t (:foreground "#E6DB74" :background "#252313" ))))
  '(font-lock-builtin-face ((t (:foreground "#AE81FF"  ))))
  '(font-lock-variable-name-face ((t (:foreground "#76E3FF"  ))))
@@ -128,9 +129,3 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'monokai-dave)
-
-;; Local Variables:
-;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
-;; End:
-
-;;; monokai-dave-theme.el ends here
