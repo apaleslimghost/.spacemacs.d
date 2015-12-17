@@ -3,6 +3,7 @@
     ;; package quartertos go here
     editorconfig
     dtrt-indent
+    unicode-fonts
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -25,3 +26,7 @@ which require an initialization must be listed explicitly in the list.")
 (defun quarterto/init-dtrt-indent ()
   (use-package dtrt-indent)
   (add-hook 'prog-mode-hook 'dtrt-indent-mode))
+
+(defun quarterto/init-unicode-fonts ()
+  (use-package unicode-fonts)
+  (unicode-fonts-setup))
