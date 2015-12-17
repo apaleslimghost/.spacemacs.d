@@ -106,11 +106,8 @@
  '(font-lock-warning-face ((t (:foreground "#F8F8F0" :background "#AE81FF" ))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#5D6D71"  ))))
 
- '(whitespace-space ((t (:foreground "#575754" :background nil))))
- '(whitespace-tab ((t (:foreground "#575754" :background nil))))
- '(whitespace-indentation ((t (:foreground "#575754" :background nil))))
- '(whitespace-newline ((t (:foreground "#575754" :background nil))))
- '(whitespace-line ((t (:foreground nil :background nil))))
+ '(whitespace-tab     ((t (:foreground "#46433a" :background nil :inherit nil :italic nil :weight light :underline nil))))
+ '(whitespace-newline ((t (:foreground "#46433a" :background nil :inherit nil :italic nil :weight light :underline nil))))
 
 ;; Rainbow delimiters
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#7a5bb3"))))

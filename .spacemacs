@@ -203,12 +203,16 @@ user code."
 layers configuration. You are free to put any user code."
 
   (setq
-   whitespace-style '(face tab-mark newline-mark)
+   whitespace-style '(face tabs newline tab-mark newline-mark)
    whitespace-display-mappings '(
-    (tab-mark 9 [10511 9]))
+    (tab-mark 9 [187 9]) ;; 187 right guillemot
+    (newline-mark 10 [8267 10])) ;; 8267 backwards pilcrow
    )
   (global-company-mode)
-  (setq tern-command (append tern-command '("--no-port-file")))
+  (setq tern-command "/usr/local/bin/tern --no-port-file")
+  (setq powerline-default-separator 'slant)
+  (global-whitespace-mode)
+  (global-auto-revert-mode)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
