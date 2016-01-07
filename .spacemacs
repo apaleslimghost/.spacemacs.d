@@ -42,9 +42,13 @@ values."
      shell-scripts
      html
      themes-megapack
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-help-tooltip t
+                      auto-completion-enable-sort-by-usage t
+                      )
      quarterto
      react
+     markdown
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -210,10 +214,15 @@ layers configuration. You are free to put any user code."
     (newline-mark 10 [8267 10])) ;; 8267 backwards pilcrow
    )
   (global-company-mode)
-  (setq tern-command "/usr/local/bin/tern --no-port-file")
+  (setq tern-command '("/usr/local/bin/tern" "--no-port-file"))
   (setq powerline-default-separator 'slant)
   (global-whitespace-mode)
   (global-auto-revert-mode)
+  (evil-ex-define-cmd "enew" 'evil-buffer-new)
+  (setq indent-tabs-mode t)
+  (setq dtrt-indent-verbosity 10)
+  (setq tab-width 2)
+  (defvaralias 'c-basic-offset 'tab-width)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
