@@ -198,6 +198,9 @@ values."
    ;; specified with an installed package.
    ;; Not used for now. (default nil)
    dotspacemacs-default-package-repository nil
+
+   ns-use-srgb-colorspace nil
+   exec-path-from-shell-check-startup-files nil
    ))
 
 (defun dotspacemacs/user-init ()
